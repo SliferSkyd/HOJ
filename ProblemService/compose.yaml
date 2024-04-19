@@ -7,16 +7,17 @@ services:
       - 'MONGO_INITDB_ROOT_USERNAME=root'
     ports:
       - '27017'
-  mysql:
-    image: 'mysql:latest'
+  problem-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
     environment:
-      - 'MYSQL_DATABASE=mydatabase'
-      - 'MYSQL_PASSWORD=secret'
-      - 'MYSQL_ROOT_PASSWORD=verysecret'
-      - 'MYSQL_USER=myuser'
+      - 'SPRING_DATA_MONGODB_URI=mongodb://root:secret@mongodb:27017/mydatabase'
     ports:
-      - '3306'
-  redis:
-    image: 'redis:latest'
-    ports:
-      - '6379'
+      - '8080'
+    depends_on:
+      - 'mongodb'
+    links:
+      - 'mongodb'
+    networks:
+      - 'backend'
