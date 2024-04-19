@@ -4,11 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f089320-fa5f-4bc7-a84b-c41ceb1ab241" name="Changes" comment="" />
+    <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/ProblemServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/controller/ProblemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/dto/ProblemRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/dto/ProblemResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/model/Problem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/model/TestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/repository/ProblemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/service/ProblemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/test/java/com/example/problemservice/ProblemServiceApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -16,54 +41,78 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2fHWqU1KelW56JIKvBjEigN8u4L" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2fIeIH7xeBc01BpUJNfGbdpgRwD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/FPT/IdeaProjects/HOJ&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "last_opened_file_path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ/UserService/src/main/java/com/sliferskyd/Main.java",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "8d0e221745a87860ca18689acdb363ba",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.ProblemServiceApplication">
+    <configuration name="ProblemServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ProblemService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliferskyd.problemservice.ProblemServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProblemServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ProblemService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.problemservice.ProblemServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="UserService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliferskyd.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8f089320-fa5f-4bc7-a84b-c41ceb1ab241" name="Changes" comment="" />
-      <created>1713458674922</created>
+      <changelist id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="" />
+      <created>1713492940433</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1713458674922</updated>
-      <workItem from="1713458676170" duration="588000" />
-      <workItem from="1713487410485" duration="1338000" />
+      <updated>1713492940433</updated>
+      <workItem from="1713492941512" duration="2736000" />
+      <workItem from="1713502082382" duration="510000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
