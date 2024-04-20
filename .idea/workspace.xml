@@ -4,24 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="">
+    <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="Refactor">
+      <change afterPath="$PROJECT_DIR$/SubmissionService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/ProblemServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/controller/ProblemController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/dto/ProblemRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/dto/ProblemResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/model/Problem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/model/TestCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/repository/ProblemRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/example/problemservice/service/ProblemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/test/java/com/example/problemservice/ProblemServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/ProblemServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/ProblemServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/controller/ProblemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/controller/ProblemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Dockerfile" />
         <option value="Class" />
       </list>
     </option>
@@ -57,6 +57,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -68,25 +72,35 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ/UserService/src/main/java/com/sliferskyd/Main.java",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ/SubmissionService/src/main/java/com/sliferskyd/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "spring.configuration.checksum": "8d0e221745a87860ca18689acdb363ba",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo",
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.ProblemServiceApplication">
-    <configuration name="ProblemServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="ProblemServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ProblemService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliferskyd.problemservice.ProblemServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProblemServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="ProblemService" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.problemservice.ProblemServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,6 +112,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProblemService/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="ProblemService/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.ProblemService/docker-compose.yaml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,11 +140,37 @@
       <option name="presentableId" value="Default" />
       <updated>1713492940433</updated>
       <workItem from="1713492941512" duration="2736000" />
-      <workItem from="1713502082382" duration="510000" />
+      <workItem from="1713502082382" duration="1250000" />
+      <workItem from="1713619403259" duration="755000" />
+      <workItem from="1713620334358" duration="11430000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactor">
+      <option name="closed" value="true" />
+      <created>1713502742580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713502742580</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.sliferskyd.problemservice;
+package com.sliferskyd.submissionservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class , MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
-public class ProblemServiceApplication {
+public class SubmissionServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProblemServiceApplication.class, args);
+        SpringApplication.run(SubmissionServiceApplication.class, args);
     }
 
 }

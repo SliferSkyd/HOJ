@@ -18,6 +18,7 @@ public class ProblemController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public void createProblem(@RequestBody ProblemRequest problemRequest) {
+        System.out.println("ProblemController.createProblem");
         problemService.createProblem(problemRequest);
     }
 

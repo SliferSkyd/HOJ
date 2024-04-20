@@ -1,7 +1,6 @@
 package com.sliferskyd.userservice.model;
 
 import lombok.*;
-import org.springframework.data.annotation.Id;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -10,6 +9,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 @Table(name = "users")
 public class User {
     @Id
