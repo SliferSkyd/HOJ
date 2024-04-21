@@ -4,23 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="Refactor">
-      <change afterPath="$PROJECT_DIR$/SubmissionService/pom.xml" afterDir="false" />
+    <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/APIGateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIGateway/src/main/java/com/sliferskyd/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JudgeService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/DockerExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/JudgeServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/SubmissionEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/SubmissionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JudgeService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/ProblemServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/ProblemServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/controller/ProblemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/controller/ProblemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +52,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -73,11 +72,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ/SubmissionService/src/main/java/com/sliferskyd/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ/APIGateway/src/main/java/com/sliferskyd/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "8d0e221745a87860ca18689acdb363ba",
+    "spring.configuration.checksum": "be0c8a77989324b901dce878565c2552",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -98,9 +97,23 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ProblemServiceApplication">
+    <configuration name="JudgeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="JudgeService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliferskyd.judgeservice.JudgeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProblemServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ProblemService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliferskyd.problemservice.ProblemServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubmissionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="SubmissionService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliferskyd.submissionservice.SubmissionServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,7 +135,9 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -142,7 +157,8 @@
       <workItem from="1713492941512" duration="2736000" />
       <workItem from="1713502082382" duration="1250000" />
       <workItem from="1713619403259" duration="755000" />
-      <workItem from="1713620334358" duration="11430000" />
+      <workItem from="1713620334358" duration="11532000" />
+      <workItem from="1713662455141" duration="7570000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <option name="closed" value="true" />
@@ -152,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713502742580</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update">
+      <option name="closed" value="true" />
+      <created>1713636157592</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713636157592</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +195,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/APIGateway/src/main/java/com/sliferskyd/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
