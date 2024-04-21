@@ -9,16 +9,12 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>APIGateway</artifactId>
+    <artifactId>DiscoveryServer</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
 

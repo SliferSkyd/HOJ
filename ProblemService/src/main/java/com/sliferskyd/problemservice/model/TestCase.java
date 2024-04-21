@@ -1,11 +1,11 @@
 package com.sliferskyd.problemservice.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.MongoId;
 
 @Data
 @Builder
@@ -15,6 +15,6 @@ public class TestCase {
     private String input;
     private String output;
     private boolean isSample;
-    @Id
+    @MongoId
     private Long id;
 }

@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/APIGateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APIGateway/src/main/java/com/sliferskyd/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JudgeService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/DockerExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/JudgeServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/SubmissionEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/SubmissionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JudgeService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryServer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIGateway/src/main/java/com/sliferskyd/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/test/java/com/sliferskyd/problemservice/ProblemServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubmissionService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SubmissionService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +36,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SliferSkyd&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8b3fe1a1-1a56-44e0-9cc3-bc5528eef85c" />
+        <option name="url" value="https://github.com/SliferSkyd/HOJ.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,11 +90,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ/APIGateway/src/main/java/com/sliferskyd/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ/DiscoveryServer/src/main/java/com/sliferskyd/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "be0c8a77989324b901dce878565c2552",
+    "spring.configuration.checksum": "c2a8128129f1531214303fbaafc12222",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -96,7 +114,27 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProblemServiceApplication">
+  <component name="RunManager" selected="Spring Boot.APIGatewayApplication">
+    <configuration name="APIGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="APIGateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliferskyd.apigateway.APIGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sliferskyd.apigateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="DiscoveryServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliferskyd.discoveryserver.DiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JudgeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="JudgeService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliferskyd.judgeservice.JudgeServiceApplication" />
@@ -140,8 +178,18 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.ProblemService/docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="Spring Boot.DiscoveryServerApplication" />
+      <item itemvalue="Spring Boot.JudgeServiceApplication" />
+      <item itemvalue="Spring Boot.ProblemServiceApplication" />
+      <item itemvalue="Spring Boot.SubmissionServiceApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
+      <item itemvalue="Spring Boot.APIGatewayApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.APIGatewayApplication" />
         <item itemvalue="Docker.ProblemService/docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -158,7 +206,8 @@
       <workItem from="1713502082382" duration="1250000" />
       <workItem from="1713619403259" duration="755000" />
       <workItem from="1713620334358" duration="11532000" />
-      <workItem from="1713662455141" duration="7570000" />
+      <workItem from="1713662455141" duration="11627000" />
+      <workItem from="1713687710580" duration="5221000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <option name="closed" value="true" />
@@ -176,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713636157592</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update">
+      <option name="closed" value="true" />
+      <created>1713672691623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713672691623</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,16 +254,5 @@
     <MESSAGE value="Refactor" />
     <MESSAGE value="Update" />
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/APIGateway/src/main/java/com/sliferskyd/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
