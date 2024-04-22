@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/DiscoveryServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="API gateway and discovery server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APIGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APIGateway/src/main/java/com/sliferskyd/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JudgeService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/test/java/com/sliferskyd/problemservice/ProblemServiceApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SubmissionService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SubmissionService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,42 +55,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_opened_file_path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ/DiscoveryServer/src/main/java/com/sliferskyd/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "c2a8128129f1531214303fbaafc12222",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/FPT/IdeaProjects/HOJ/HOJ&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/FPT/IdeaProjects/HOJ/HOJ/DiscoveryServer/src/main/java/com/sliferskyd/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c2a8128129f1531214303fbaafc12222&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mongo",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -114,7 +101,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.APIGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.SubmissionServiceApplication">
     <configuration name="APIGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="APIGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliferskyd.apigateway.APIGatewayApplication" />
@@ -207,7 +194,9 @@
       <workItem from="1713619403259" duration="755000" />
       <workItem from="1713620334358" duration="11532000" />
       <workItem from="1713662455141" duration="11627000" />
-      <workItem from="1713687710580" duration="5221000" />
+      <workItem from="1713687710580" duration="5868000" />
+      <workItem from="1713715133105" duration="3590000" />
+      <workItem from="1713743825440" duration="859000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <option name="closed" value="true" />
@@ -233,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713672691623</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="API gateway and discovery server">
+      <option name="closed" value="true" />
+      <created>1713695078970</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713695078971</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +250,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="API gateway and discovery server" />
+    <option name="LAST_COMMIT_MESSAGE" value="API gateway and discovery server" />
   </component>
 </project>
