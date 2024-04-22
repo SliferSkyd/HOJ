@@ -1,5 +1,6 @@
 package com.sliferskyd.problemservice.model;
 
+import com.sliferskyd.problemservice.dto.TestCase;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,4 +22,6 @@ public class Problem {
     private String description;
     private String source;
     private List<TestCase> testCases;
+    private Double timeLimit; // in seconds
+    private Integer memoryLimit; // in MB
 }

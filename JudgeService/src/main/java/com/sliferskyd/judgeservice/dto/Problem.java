@@ -1,4 +1,4 @@
-package com.sliferskyd.problemservice.dto;
+package com.sliferskyd.judgeservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-@Data
 @Builder
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProblemRequest {
+public class Problem {
     private String id;
     private String title;
     private String description;
