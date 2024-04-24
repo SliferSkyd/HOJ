@@ -1,8 +1,8 @@
 package com.sliferskyd.submissionservice.service;
 
-import com.sliferskyd.submissionservice.dto.SubmissionEvent;
 import com.sliferskyd.submissionservice.dto.SubmissionRequest;
 import com.sliferskyd.submissionservice.dto.SubmissionResponse;
+import com.sliferskyd.submissionservice.model.Result;
 import com.sliferskyd.submissionservice.model.Submission;
 import com.sliferskyd.submissionservice.repository.SubmissionRepository;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 @Transactional
 public class SubmissionService {
     private final SubmissionRepository submissionRepository;
-    private final KafkaTemplate<String, SubmissionEvent> kafkaTemplate;
+    private final KafkaTemplate<String, String> kafkaTemplate;
 
     public SubmissionResponse createSubmission(SubmissionRequest submissionRequest) {
         Submission submission = Submission.builder()
@@ -27,17 +27,10 @@ public class SubmissionService {
                 .userId(submissionRequest.getUserId())
                 .language(submissionRequest.getLanguage())
                 .code(submissionRequest.getCode())
-                .status("PENDING")
+                .status("Running")
                 .build();
         submission = submissionRepository.save(submission);
-        SubmissionEvent submissionEvent = SubmissionEvent.builder()
-                .id(submission.getId())
-                .problemId(submission.getProblemId())
-                .userId(submission.getUserId())
-                .language(submission.getLanguage())
-                .code(submission.getCode())
-                .build();
-        kafkaTemplate.send("submission", submissionEvent);
+        kafkaTemplate.send("submission", submission.getId());
         log.info("Submission created: {}", submission);
         return SubmissionResponse.builder()
                 .id(submission.getId())
@@ -109,5 +102,14 @@ public class SubmissionService {
                         .code(submission.getCode())
                         .build())
                 .collect(Collectors.toList());
+    }
+
+    public void updateSubmissionStatus(String id, List<Result> results) {
+        Submission submission = submissionRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Submission with id: " + id + " not found"));
+        submission.setStatus("Completed");
+        submission.setResults(results);
+        submissionRepository.save(submission);
+        log.info("Submission status updated: {}", submission);
     }
 }

@@ -5,13 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class SubmissionEvent {
-    private String submissionId;
-    private String code;
-    private String language;
-    private String problemId;
+@Data
+public class Result {
+    private String id;
+    private String status;
+    private String message;
+    private boolean isCorrect;
+    private Double executionTime;
 }

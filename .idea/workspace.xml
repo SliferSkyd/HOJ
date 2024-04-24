@@ -4,19 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="Implement Kafka in Submission Service">
+    <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="Update Judge System using Docker">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JudgeService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/DockerExecutor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/SubmissionEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/dto/SubmissionEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/SubmissionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/service/SubmissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/data/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/data/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/data/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/data/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/data/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/dto/SubmissionEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/service/SubmissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/service/SubmissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/tool/Judge.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/JudgeService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/dto/ProblemRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/dto/ProblemRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/dto/ProblemResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/dto/ProblemResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/dto/TestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/controller/SubmissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/controller/SubmissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/dto/SubmissionEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/dto/SubmissionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/dto/SubmissionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/model/Submission.java" beforeDir="false" afterPath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/model/Submission.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/service/SubmissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/service/SubmissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubmissionService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SubmissionService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/model/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/model/Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/sliferskyd/userservice/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -65,44 +75,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/FPT/IdeaProjects/HOJ/HOJ&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/FPT/IdeaProjects/HOJ/HOJ/DiscoveryServer/src/main/java/com/sliferskyd/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;c2a8128129f1531214303fbaafc12222&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "last_opened_file_path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ/JudgeService/src/main/java/com/sliferskyd/judgeservice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/FPT/IdeaProjects/HOJ/HOJ/DiscoveryServer/src/main/java/com/sliferskyd/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "c2a8128129f1531214303fbaafc12222",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mongo&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FPT\IdeaProjects\HOJ\HOJ\JudgeService\src\main\java\com\sliferskyd\judgeservice" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -117,7 +132,7 @@
       <module name="JudgeService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sliferskyd.judgeservice.service.*" />
+          <option name="PATTERN" value="com.sliferskyd.judgeservice.dto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,7 +239,9 @@
       <workItem from="1713743825440" duration="2354000" />
       <workItem from="1713733718184" duration="297000" />
       <workItem from="1713734042762" duration="14198000" />
-      <workItem from="1713797848207" duration="1816000" />
+      <workItem from="1713797848207" duration="2741000" />
+      <workItem from="1713923122903" duration="1190000" />
+      <workItem from="1713966367175" duration="8602000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <option name="closed" value="true" />
@@ -266,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713744993625</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update Judge System using Docker">
+      <option name="closed" value="true" />
+      <created>1713799722022</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713799722022</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +313,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="API gateway and discovery server" />
     <MESSAGE value="Implement Kafka in Submission Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Kafka in Submission Service" />
+    <MESSAGE value="Update Judge System using Docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Judge System using Docker" />
   </component>
 </project>

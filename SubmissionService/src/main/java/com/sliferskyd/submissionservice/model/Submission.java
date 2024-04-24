@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
+import java.util.List;
+
 @Document(collection = "submissions")
 @Data
 @AllArgsConstructor
@@ -20,5 +22,5 @@ public class Submission {
     private String language;
     private String code;
     private String status;
-    private String message;
+    private List<Result> results;
 }

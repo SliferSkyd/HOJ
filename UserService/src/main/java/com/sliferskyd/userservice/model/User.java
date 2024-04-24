@@ -14,10 +14,5 @@ import java.util.List;
 public class User {
     @Id
     private String username;
-    @NonNull
     private String password;
-    @NonNull
-    private List<Integer> solvedProblems;
-    @NonNull
-    private List<Integer> attemptedProblems;
 }

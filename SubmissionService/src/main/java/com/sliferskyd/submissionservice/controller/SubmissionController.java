@@ -2,6 +2,7 @@ package com.sliferskyd.submissionservice.controller;
 
 import com.sliferskyd.submissionservice.dto.SubmissionRequest;
 import com.sliferskyd.submissionservice.dto.SubmissionResponse;
+import com.sliferskyd.submissionservice.model.Result;
 import com.sliferskyd.submissionservice.service.SubmissionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -41,8 +42,8 @@ public class SubmissionController {
         submissionService.getSubmissionsByUserId(userId);
     }
 
-    @PutMapping
-    public void updateSubmission(@RequestBody SubmissionRequest submissionRequest) {
-        submissionService.updateSubmission(submissionRequest);
+    @PostMapping("/{id}")
+    public void updateSubmissionStatus(@PathVariable String id, @RequestBody List<Result> results) {
+        submissionService.updateSubmissionStatus(id, results);
     }
 }
