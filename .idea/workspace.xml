@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33bddff5-4627-425c-8be3-4c96cea65641" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APIGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiscoveryServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JudgeService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/JudgeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/JudgeServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/service/SubmissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/src/main/java/com/sliferskyd/judgeservice/service/SubmissionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JudgeService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/JudgeService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SubmissionService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SubmissionService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SubmissionService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SubmissionService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemService/src/main/java/com/sliferskyd/problemservice/model/Problem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/model/Submission.java" beforeDir="false" afterPath="$PROJECT_DIR$/SubmissionService/src/main/java/com/sliferskyd/submissionservice/model/Submission.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,9 +194,9 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Docker.ProblemService/docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="Spring Boot.ProblemServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServerApplication" />
       <item itemvalue="Spring Boot.JudgeServiceApplication" />
-      <item itemvalue="Spring Boot.ProblemServiceApplication" />
       <item itemvalue="Spring Boot.SubmissionServiceApplication" />
       <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.APIGatewayApplication" />
@@ -233,6 +231,13 @@
       <workItem from="1713923122903" duration="1190000" />
       <workItem from="1713966367175" duration="10408000" />
       <workItem from="1714010540626" duration="4761000" />
+      <workItem from="1714016635168" duration="50000" />
+      <workItem from="1714020216538" duration="6177000" />
+      <workItem from="1714029172434" duration="582000" />
+      <workItem from="1714032628151" duration="2051000" />
+      <workItem from="1714038542443" duration="2047000" />
+      <workItem from="1714055505795" duration="4038000" />
+      <workItem from="1714100245583" duration="3901000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <option name="closed" value="true" />
@@ -290,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713977728610</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <option name="closed" value="true" />
+      <created>1714016673956</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714016673956</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

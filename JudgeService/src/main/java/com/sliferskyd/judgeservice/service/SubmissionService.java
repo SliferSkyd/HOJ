@@ -7,6 +7,7 @@ import com.sliferskyd.judgeservice.dto.TestCase;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import java.io.*;
@@ -16,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @RequiredArgsConstructor
+@Service
 public class SubmissionService {
     private final WebClient webClient;
     private final String path = "JudgeSpace/";
@@ -133,9 +135,10 @@ public class SubmissionService {
                 .block();
     }
 
-    @KafkaListener(topics = "submission")
-    public void listen(Integer submissionId) throws IOException, InterruptedException {
+    @KafkaListener(topics = "submission", groupId = "judge")
+    public void listen(String submissionId) throws IOException, InterruptedException {
         log.info("Received submission: {}", submissionId);
+        System.out.println("Received submission: " + submissionId);
         Submission submission = webClient.get()
                 .uri("http://localhost:8080/submissions/" + submissionId)
                 .retrieve()
