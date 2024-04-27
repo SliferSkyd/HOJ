@@ -17,6 +17,6 @@ public class Problem {
     private String description;
     private String source;
     private List<TestCase> testCases;
-    private Double timeLimit; // in seconds
+    private Integer timeLimit; // in milliseconds
     private Integer memoryLimit; // in MB
 }

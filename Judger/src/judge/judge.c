@@ -30,7 +30,10 @@ int compareFile(const char *file1_path, const char *file2_path) {
 
     int char1, char2;
 
-    while ((char1 = fgetc(file1)) != EOF && (char2 = fgetc(file2)) != EOF) {
+    while (1) {
+        char1 = fgetc(file1);
+        char2 = fgetc(file2);
+        if (char1 == EOF || char2 == EOF) break;
         // Skip whitespace characters
         while (isspace(char1)) {
             char1 = fgetc(file1);
@@ -38,20 +41,11 @@ int compareFile(const char *file1_path, const char *file2_path) {
         while (isspace(char2)) {
             char2 = fgetc(file2);
         }
-
         if (char1 != char2) {
             fclose(file1);
             fclose(file2);
             return 1; // Return 1 to indicate files differ
         }
-    }
-
-    while (isspace(char1)) {
-        char1 = fgetc(file1);
-    }
-
-    while (isspace(char2)) {
-        char2 = fgetc(file2);
     }
 
     // Check if one file reached EOF before the other
@@ -114,6 +108,7 @@ enum RUNNING_CONDITION getRunningCondition(int status, struct execConfig *execCo
 void runJudge(struct execConfig *execConfig, struct judgeResult *judgeResult) {
     struct timeval startTime, endTime;
     gettimeofday(&startTime, NULL);
+    
     if (!isRoot()) {
         judgeResult->condition = NOT_ROOT_USER;
         return;
@@ -154,4 +149,21 @@ void runJudge(struct execConfig *execConfig, struct judgeResult *judgeResult) {
         judgeResult->memoryCost = costResource.ru_maxrss;
         judgeResult->condition = getRunningCondition(status, execConfig, judgeResult);
     }
+}
+
+int compile(struct execConfig *execConfig) {
+    if (execConfig->language == CPP) {
+        if (system("g++ -o ../data/run ../data/main.cpp") != 0) return 0;
+        return 1;
+    } else if (execConfig->language == JAVA) {
+        if (system("javac ../data/Main.java") != 0) return 0;
+        system("echo '#!/bin/sh' > ../data/run");
+        system("echo 'java Main' >> ../data/run");
+        return 1;
+    } else if (execConfig->language == PYTHON3) {
+        system("echo '#!/bin/sh' > ../data/run");
+        system("echo 'python3 ../data/main.py' >> ../data/run");
+        return 1;
+    }
+    return -1;
 }

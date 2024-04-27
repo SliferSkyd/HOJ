@@ -14,5 +14,6 @@ public class Result {
     private String status;
     private String message;
     private boolean isCorrect;
-    private Double executionTime;
+    private Integer timeUsed;
+    private Integer memoryUsed;
 }

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <getopt.h>
 #include "common.h"
+#include <string.h>
 
 #define VALIDATE_CONFIG_ERROR 0
 #define VALIDATE_SUCCESS 1
@@ -15,7 +16,7 @@ void initExecConfigAndJudgeResult(struct execConfig *execConfig, struct judgeRes
     execConfig->wallMemoryLimit = WALL_MEMORY_DEFAULT;
     execConfig->uid = UID_DEFAULT;
     execConfig->guard = GUARD_DEFAULT;
-    execConfig->execPath = "../data/Main";
+    execConfig->execPath = "../data/run";
     execConfig->stderrPath = "../data/test.err";
     execConfig->stdoutPath = "../data/test.out";
     execConfig->stdinPath = "../data/test.in";
@@ -40,7 +41,7 @@ int validateForExecConfig(struct execConfig *execConfig) {
 
 int getAndSetOptions(int argc, char *argv[], struct execConfig *execConfig) {
     int opt;
-    while ((opt = getopt(argc, argv, "t:c:m:f:g:p:")) != -1) {
+    while ((opt = getopt(argc, argv, "t:c:m:f:g:p:l:")) != -1) {
         switch (opt) {
             case 't':
                 execConfig->realTimeLimit = atoi(optarg);
@@ -57,6 +58,18 @@ int getAndSetOptions(int argc, char *argv[], struct execConfig *execConfig) {
             case 'g':
                 execConfig->guard = atoi(optarg);
                 break;
+            case 'l':
+                if (strcmp(optarg, "c++") == 0) {
+                    execConfig->language = CPP;
+                } else if (strcmp(optarg, "java") == 0) {
+                    execConfig->language = JAVA;
+                } else if (strcmp(optarg, "python") == 0) {
+                    execConfig->language = PYTHON3;
+                } else {
+                    printf("Unknown language: %s\n", optarg);
+                }
+                break;
+
             default:
                 printf("Unknown option: %c\n", (char) optopt);
                 return 0;
@@ -66,13 +79,7 @@ int getAndSetOptions(int argc, char *argv[], struct execConfig *execConfig) {
 }
 
 void generateResult(struct execConfig *execConfig, struct judgeResult *judgeResult) {
-    printf("{\n"
-           "    \"timeUsed\": %llu,\n"
-           "    \"memoryUsed\": %llu,\n"
-           "    \"status\": %d,\n"
-           "}\n",
-           judgeResult->realTimeCost,
-           judgeResult->memoryCost,
-           judgeResult->condition
-    );
+    printf("timeUsed: %llu\n", judgeResult->realTimeCost);
+    printf("memoryUsed: %llu\n", judgeResult->memoryCost);
+    printf("status: %d\n", judgeResult->condition);
 }

@@ -7,6 +7,7 @@
 
 enum RUNNING_CONDITION {
     RUN_SUCCESS = 0,
+    COMPILE_ERROR,
     WRONG_ANSWER,
     RUNTIME_ERROR,
     TIME_LIMIT_EXCEED,
@@ -35,6 +36,55 @@ enum EXEC_SETTING_DEFAULT {
     GUARD_DEFAULT = 0
 };
 
+enum LANGUAGE {
+    C = 0,
+    CPP,
+    JAVA,
+    PYTHON2,
+    PYTHON3,
+    RUBY,
+    BASH,
+    PERL,
+    SCALA,
+    KOTLIN,
+    PHP,
+    GO,
+    RUST,
+    SWIFT,
+    JS,
+    TS,
+    LUA,
+    SQL,
+    CSHARP,
+    VB,
+    HASKELL,
+    PASCAL,
+    OCAML,
+    FSHARP,
+    DART,
+    GROOVY,
+    OBJECTIVEC,
+    LISP,
+    PROLOG,
+    SCHEME,
+    NODE,
+    R,
+    COBOL,
+    FORTH,
+    FORTAN,
+    ERLANG,
+    TSQL,
+    CLOJURE,
+    D,
+    NIM,
+    KTLINT,
+    CMAKE,
+    MAKE,
+    SHELL,
+    TEXT,
+    OTHER
+};
+
 struct timeoutKillerConfig {
     int pid;
     int limitTime;
@@ -52,6 +102,7 @@ struct execConfig {
     char *stdoutPath;
     char *stderrPath;
     char *stdansPath;
+    int language;
     uid_t uid;
     int guard;
 };

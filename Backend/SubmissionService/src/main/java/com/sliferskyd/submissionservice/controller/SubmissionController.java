@@ -28,22 +28,22 @@ public class SubmissionController {
     }
 
     @GetMapping("/{id}")
-    public SubmissionResponse getSubmissionById(@PathVariable String id) {
+    public SubmissionResponse getSubmissionById(@PathVariable("id") String id) {
         return submissionService.getSubmission(id);
     }
 
     @GetMapping("/problem/{problemId}")
-    public void getSubmissionsByProblemId(@PathVariable String problemId) {
+    public void getSubmissionsByProblemId(@PathVariable("problemId") String problemId) {
         submissionService.getSubmissionsByProblemId(problemId);
     }
 
     @GetMapping("/user/{userId}")
-    public void getSubmissionsByUserId(@PathVariable String userId) {
+    public void getSubmissionsByUserId(@PathVariable("userId") String userId) {
         submissionService.getSubmissionsByUserId(userId);
     }
 
     @PostMapping("/{id}")
-    public void updateSubmissionStatus(@PathVariable String id, @RequestBody List<Result> results) {
+    public void updateSubmissionStatus(@PathVariable("id") String id, @RequestBody List<Result> results) {
         submissionService.updateSubmissionStatus(id, results);
     }
 }

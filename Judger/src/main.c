@@ -8,7 +8,11 @@ int main(int argc, char *argv[]) {
     initExecConfigAndJudgeResult(&execConfig, &judgeResult);
     if (getAndSetOptions(argc, argv, &execConfig)) {
         if (validateForExecConfig(&execConfig)) {
-            runJudge(&execConfig, &judgeResult);
+            if (!compile(&execConfig)) {
+                judgeResult.condition = COMPILE_ERROR;
+            } else {
+                runJudge(&execConfig, &judgeResult);
+            }
         } else {
             judgeResult.condition = VALIDATE_ERROR;
         }

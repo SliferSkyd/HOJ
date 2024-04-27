@@ -24,6 +24,8 @@ public class ProblemService {
                 .description(problemRequest.getDescription())
                 .source(problemRequest.getSource())
                 .testCases(problemRequest.getTestCases())
+                .timeLimit(problemRequest.getTimeLimit())
+                .memoryLimit(problemRequest.getMemoryLimit())
                 .build();
         problemRepository.save(problem);
         log.info("Creating a new problem with title: {}", problemRequest.getTitle());
@@ -40,6 +42,8 @@ public class ProblemService {
                         .description(problem.getDescription())
                         .source(problem.getSource())
                         .testCases(problem.getTestCases())
+                        .timeLimit(problem.getTimeLimit())
+                        .memoryLimit(problem.getMemoryLimit())
                         .build())
                 .collect(Collectors.toList());
     }
@@ -55,6 +59,8 @@ public class ProblemService {
                 .description(problem.getDescription())
                 .source(problem.getSource())
                 .testCases(problem.getTestCases())
+                .timeLimit(problem.getTimeLimit())
+                .memoryLimit(problem.getMemoryLimit())
                 .build();
     }
 
@@ -72,6 +78,8 @@ public class ProblemService {
                 .description(problemRequest.getDescription())
                 .source(problemRequest.getSource())
                 .testCases(problemRequest.getTestCases())
+                .timeLimit(problemRequest.getTimeLimit())
+                .memoryLimit(problemRequest.getMemoryLimit())
                 .build();
         problemRepository.save(problem);
         log.info("Updating a problem with id: {}", id);

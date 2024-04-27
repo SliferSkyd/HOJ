@@ -1,8 +1,9 @@
-#ifndef Y_JUDGER_JUDGE_H
-#define Y_JUDGER_JUDGE_H
+#ifndef __JUDGE_H
+#define __JUDGE_H
 
 #include "../common/common.h"
 
 void runJudge(struct execConfig *execConfig, struct judgeResult *judgeResult);
+int compile(struct execConfig *execConfig);
 
-#endif //Y_JUDGE_JUDGE_H
+#endif
