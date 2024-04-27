@@ -14,6 +14,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.sliferskyd.judgeservice.config.StatusConfig.exitCode;
+
 @Slf4j
 @RequiredArgsConstructor
 @Service
@@ -49,33 +51,30 @@ public class JudgeService {
 
     private Result runTest(Integer timeLimit, Integer memoryLimit, String language) throws IOException, InterruptedException {
         File dataFolder = new File(path);
-        ProcessBuilder processBuilder = new ProcessBuilder("docker", "run", "-v", dataFolder.getAbsolutePath() + ":/app/data", "judger", "./judger", "-c", Integer.toString(timeLimit), "-m", Integer.toString(memoryLimit), ">", dataFolder.getAbsolutePath() + "/result.txt");
-
+        ProcessBuilder processBuilder = new ProcessBuilder("docker", "run", "--rm", "-v", dataFolder.getAbsolutePath() + ":/app/data", "judger", "./judger", "-c", Integer.toString(timeLimit), "-m", Integer.toString(memoryLimit), "-l", language);
+        File resultFile = new File(path + "result.txt");
+        processBuilder.redirectOutput(resultFile);
         processBuilder.start().waitFor();
-        BufferedReader reader = new BufferedReader(new FileReader(path + "result.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader(resultFile));
         String line;
         Result result = new Result();
         while ((line = reader.readLine()) != null) {
             List<String> cur = List.of(line.split(" "));
-            if (cur.get(0).equals("timeUsed")) {
-                result.builder().timeUsed(Integer.parseInt(cur.get(1))).build();
-            } else if (cur.get(0).equals("memoryUsed")) {
-                result.builder().memoryUsed(Integer.parseInt(cur.get(1))).build();
-            } else if (cur.get(0).equals("status")) {
-                result.builder().status(cur.get(1)).build();
+            if (cur.get(0).equals("timeUsed:")) {
+                result.setTimeUsed(Integer.parseInt(cur.get(1)));
+            } else if (cur.get(0).equals("memoryUsed:")) {
+                result.setMemoryUsed(Integer.parseInt(cur.get(1)));
+            } else if (cur.get(0).equals("status:")) {
+                result.setStatus(exitCode.get(Integer.parseInt(cur.get(1))));
             }
         }
         return result;
     }
 
-    private void sendResult(String status, List<Result> results) {
-        log.info("Sending result: {}", status);
+    private void sendResult(String id, List<Result> results) {
         webClient.post()
-                .uri("http://localhost:8080/submissions")
-                .bodyValue(Submission.builder()
-                        .status(status)
-                        .results(results)
-                        .build())
+                .uri("http://localhost:8080/submissions/" + id)
+                .bodyValue(results)
                 .retrieve()
                 .bodyToMono(Void.class)
                 .block();
@@ -101,7 +100,6 @@ public class JudgeService {
         if (!new File(path).exists()) {
             new File(path).mkdir();
         }
-        String status = "Accepted";
         List<Result> results = new ArrayList<>();
 
         writeCode(submission.getCode(), submission.getLanguage());
@@ -116,6 +114,6 @@ public class JudgeService {
             Result currentResult = runTest(timeLimit, memoryLimit, submission.getLanguage());
             results.add(currentResult);
         }
-        sendResult(status, results);
+        sendResult(submissionId, results);
     }
 }

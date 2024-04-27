@@ -24,5 +24,5 @@ public class Problem {
     private String source;
     private List<TestCase> testCases;
     private Integer timeLimit; // in milliseconds
-    private Integer memoryLimit; // in MB
+    private Integer memoryLimit; // in KB
 }
