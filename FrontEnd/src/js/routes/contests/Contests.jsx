@@ -12,19 +12,15 @@ import TableCell from "../../components/utils/TableCell"
 import Axios from "axios"
 import { SessionContext } from "../../../utils/context"
 import { userRoute } from "../../../utils/APIRoutes"
-import Profile from "./Profile"
 
-function Ranking() {
+function Contests() {
     const [users, setUsers] = React.useState([])
     const [user, setUser] = React.useState(null)
 
     React.useEffect(() => {
-        document.title = "Ranking"
+        document.title = "Contests"
     })
     React.useEffect(() => {
-        Axios.get(userRoute, { withCredentials: true }).then(res => {
-            setUsers(res.data)
-        })
         setUsers([
             {
                 username: "user1",
@@ -84,9 +80,6 @@ function Ranking() {
                                 ))
                             }
                         </CustomTable>
-                        {user !== null &&
-                            <Profile user={user} setUser={(state) => setUser(state)}
-                            />}
                     </LeftSideComponent>
                 </LeftSide>                
             </Content>
@@ -94,4 +87,4 @@ function Ranking() {
 
     )
 }
-export default Ranking
+export default Contests

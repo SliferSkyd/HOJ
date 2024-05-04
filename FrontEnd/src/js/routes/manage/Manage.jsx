@@ -5,7 +5,7 @@ import LeftSideComponent from "../../components/contents/LeftSideComponent"
 import RightSide from "../../components/contents/RightSide"
 import RightSideComponent from "../../components/contents/RightSideComponent"
 import React from "react"
-import Table from "../../components/utils/Table"
+import CustomTable from "../../components/utils/Table"
 import TableRow from "../../components/utils/TableRow"
 import TableCellHead from "../../components/utils/TableCellHead"
 import TableCell from "../../components/utils/TableCell"
@@ -93,7 +93,7 @@ function Manage() {
                 <LeftSide width="75%">
                     <LeftSideComponent>
                         <div className="text-heading">Users</div>
-                        <Table>
+                        <CustomTable>
                             <TableRow>
                                 <TableCellHead title="#" />
                                 <TableCellHead title="Username" />
@@ -121,7 +121,7 @@ function Manage() {
                                     </React.Fragment>
                                 ))
                             }
-                        </Table>
+                        </CustomTable>
                     </LeftSideComponent>
                 </LeftSide>
                 <RightSide width="25%">

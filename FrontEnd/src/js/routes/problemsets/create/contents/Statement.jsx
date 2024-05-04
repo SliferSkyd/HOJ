@@ -1,4 +1,4 @@
-import Table from '../../../../components/utils/Table'
+import CustomTable from '../../../../components/utils/Table'
 import TableRow from '../../../../components/utils/TableRow'
 import TableCell from '../../../../components/utils/TableCell'
 import TableCellHead from '../../../../components/utils/TableCellHead'
@@ -42,7 +42,7 @@ function Statement() {
             <div className='flex-vertical'>
                 <MarkdownArea title='Main statement' height='300px' type="statement_main" />
                 <div>Example input/output </div>
-                <Table>
+                <CustomTable>
                     <TableRow>
                         <TableCellHead title="Input" />
                         <TableCellHead title="Output" />
@@ -64,7 +64,7 @@ function Statement() {
                         <TableCell padding="15px"><textarea rows="5" type="text" value={example['out']} onChange={(e) => onExampleChange(e, 'out', e.target.value)} /></TableCell>
                         <TableCell><button className="btn-submit" onClick={(e) => onExampleCreate(e)}>Add</button></TableCell>
                     </TableRow>
-                </Table>
+                </CustomTable>
                 <MarkdownArea title='Notes' height='150px' type="statement_note" />
             </div>
         </div>

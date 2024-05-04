@@ -1,10 +1,11 @@
 import React from "react"
+import Table from 'react-bootstrap/Table'
 
-function Table(props) {
+function CustomTable(props) {
     var tableRef = React.createRef();
 
     React.useEffect(() => {
-        if (props.fixedColumn) {
+        /* if (props.fixedColumn) {
             var array = new Array(props.fixedColumn.length).fill(0)
             var element = Array.from(tableRef.current.children[0].children)
 
@@ -27,9 +28,11 @@ function Table(props) {
                 })
             })
         }
+        */
     }, [tableRef, props.fixedColumn])
 
     return (
+        /*
         <div className="table-div">
             <table className="table" ref={tableRef}>
                 <tbody>
@@ -38,7 +41,16 @@ function Table(props) {
 
             </table>
         </div>
+        */
 
+        <Table striped bordered hover>
+            <thead>
+                {props.children[0]}
+            </thead>
+            <tbody>
+                {props.children.slice(1)}
+            </tbody>
+        </Table>
     )
 }
-export default Table
+export default CustomTable

@@ -15,7 +15,17 @@ function Home() {
             <Content>
                 <LeftSide width="100%">
                     <LeftSideComponent>
-                        <div className="text-heading">Welcome to PhoCF Judge System.</div>
+                        <div style={{display: "flex", columnGap: 30}}>
+                            <div>
+                                <div className="text-heading" style={{ fontSize: 25}}>Welcome to Hoang's Online Judge System.</div>
+                                <div className="text-content" style={{ fontSize: 18}}>
+                                    <p>This is a simple online judge system, where you can submit your code and get the result of your code.</p>
+                                    <p>Currently, the system only supports C++, Java and Python programming languages.</p>
+                                </div>
+                            </div>
+                            <img src="https://c0.wallpaperflare.com/preview/919/570/398/lawyer-judge-african-cartoon.jpg" alt="" style={{height: 200}} />
+                        </div>
+                        
                     </LeftSideComponent>
                 </LeftSide>
             </Content>

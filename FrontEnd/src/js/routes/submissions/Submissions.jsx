@@ -1,21 +1,21 @@
 import React from 'react'
-import Content from "../../../components/contents/Content"
-import Header from "../../../components/headers/Header"
-import SubNavigation from "../../../components/headers/SubNavigation"
-import LeftSide from "../../../components/contents/LeftSide"
-import LeftSideComponent from "../../../components/contents/LeftSideComponent"
+import Content from "../../components/contents/Content"
+import Header from "../../components/headers/Header"
+import SubNavigation from "../../components/headers/SubNavigation"
+import LeftSide from "../../components/contents/LeftSide"
+import LeftSideComponent from "../../components/contents/LeftSideComponent"
 
-import Table from '../../../components/utils/Table'
-import TableRow from '../../../components/utils/TableRow'
-import TableCell from '../../../components/utils/TableCell'
-import TableCellHead from '../../../components/utils/TableCellHead'
+import CustomTable from '../../components/utils/Table'
+import TableRow from '../../components/utils/TableRow'
+import TableCell from '../../components/utils/TableCell'
+import TableCellHead from '../../components/utils/TableCellHead'
 import Axios from 'axios'
 import PreviewSolution from './PreviewSolution'
 
 import { io } from "socket.io-client"
-import { SessionContext } from '../../../../utils/context'
+import { SessionContext } from '../../../utils/context'
 
-function ProblemsetStatus() {
+function Submissions() {
     const [status, setStatus] = React.useState([])
     const [previewSolution, setPreviewSolution] = React.useState(null)
     const { session } = React.useContext(SessionContext)
@@ -60,11 +60,10 @@ function ProblemsetStatus() {
     return (
         <React.Fragment>
             <Header />
-            <SubNavigation />
             <Content>
                 <LeftSide width="100%">
                     <LeftSideComponent>
-                        <Table>
+                        <CustomTable>
                             <TableRow>
                                 <TableCellHead title="#" />
                                 <TableCellHead title="When" />
@@ -87,7 +86,7 @@ function ProblemsetStatus() {
                                             <TableCell padding='6px'>
                                                 <div style={{
                                                     fontWeight: value.verdict.includes('Inqueue') || value.verdict.includes('Judging') || value.verdict.includes('Running') ? 0 : 500,
-                                                    color: value.verdict.includes('Error') ? 'red'                                                                                                                                      : (value.verdict.includes('Inqueue') || value.verdict.includes('Judging') || value.verdict.includes('Running') ? 'gray' : 'green')
+                                                    color: value.verdict.includes('Error') ? 'red' : (value.verdict.includes('Inqueue') || value.verdict.includes('Judging') || value.verdict.includes('Running') ? 'gray' : 'green')
                                                 }}>
                                                     {value.verdict}
                                                 </div>
@@ -98,7 +97,7 @@ function ProblemsetStatus() {
                                     </React.Fragment>
                                 ))
                             }
-                        </Table>
+                        </CustomTable>
                         {previewSolution !== null &&
                             <PreviewSolution id={previewSolution} setId={(state) => setPreviewSolution(state)}
                             />}
@@ -108,4 +107,4 @@ function ProblemsetStatus() {
         </React.Fragment>
     )
 }
-export default ProblemsetStatus
+export default Submissions

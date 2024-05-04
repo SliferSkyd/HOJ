@@ -11,6 +11,7 @@ import { ProblemsetInfoContext } from '../../../../utils/context'
 import SubNavigation from '../../../components/headers/SubNavigation'
 import Axios from 'axios'
 import { useParams } from 'react-router-dom'
+import { problemsetRoute } from '../../../../utils/APIRoutes'
 
 function ProblemsetCreate(props) {
     const { id } = useParams()
@@ -30,7 +31,7 @@ function ProblemsetCreate(props) {
     React.useEffect(() => {
         document.title = "Problemset - Add"
         if (props.edit) {
-            Axios.get(`http://localhost:3001/problem?problem_code=${id}`, { withCredentials: true }).then(res => {
+            Axios.get(`${problemsetRoute}?problem_code=${id}`, { withCredentials: true }).then(res => {
                 setInfo(res.data)
             })
         }

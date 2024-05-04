@@ -17,14 +17,18 @@ function Navigation(props) {
                 <NavigationComponent path="/" title="Home" uppercase />
                 <NavigationComponent path="/problemsets" title="Problemsets" uppercase />
                 {session.role === 1 && <NavigationComponent path="/manage" title="Manage" uppercase />}
+                <NavigationComponent path="/submissions" title="Submissions" uppercase />
                 <NavigationComponent path="/ranking" title="Ranking" uppercase />
+                <NavigationComponent path="/contests" title="Contests" uppercase />
             </div>
             <div className="nav-dropdown">
                 <Dropdown trigger={<Icon><BsFillGrid3X3GapFill /></Icon>} drop="center">
                     <DropdownComponent title="Home" icon={<AiFillHome />} href='/' />
                     <DropdownComponent title="Problemsets" icon={<IoNewspaperOutline />} href='/problemsets' />
                     {session.role === 1 && <DropdownComponent title="Manage" icon={<GrUserAdmin />} href="/manage" />}
-                    <NavigationComponent path="/ranking" title="Ranking" uppercase />
+                    <DropdownComponent title="Submissions" icon={<IoNewspaperOutline />} href='/submissions' />
+                    <DropdownComponent title="Ranking" icon={<IoNewspaperOutline />} href='/ranking' />
+                    <DropdownComponent title="Contests" icon={<IoNewspaperOutline />} href='/contests' />
                 </Dropdown>
             </div>
 

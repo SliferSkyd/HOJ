@@ -7,7 +7,7 @@ import LeftSideComponent from "../../components/contents/LeftSideComponent"
 import RightSide from "../../components/contents/RightSide"
 import RightSideComponent from "../../components/contents/RightSideComponent"
 
-import Table from '../../components/utils/Table'
+import CustomTable from '../../components/utils/Table'
 import TableRow from '../../components/utils/TableRow'
 import TableCell from '../../components/utils/TableCell'
 import TableCellHead from '../../components/utils/TableCellHead'
@@ -16,6 +16,7 @@ import Axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 const swal = withReactContent(Swal)
 
@@ -30,10 +31,38 @@ function Problemset() {
     })
 
     React.useEffect(() => {
+        /*
         Axios.get("http://localhost:3001/problems", { withCredentials: true }).then(res => {
             setProblems(res.data)
             setProblemsClone(res.data)
         })
+        */
+       setProblems([
+              {
+                problem_code: "problem1",
+                problem_name: "Problem 1",
+                solved: 0,
+                score: 25
+              },
+              {
+                problem_code: "problem2",
+                problem_name: "Problem 2",
+                solved: 1,
+                score: 50
+              },
+              {
+                problem_code: "problem3",
+                problem_name: "Problem 3",
+                solved: 2,
+                score: 75
+              },
+              {
+                problem_code: "problem4",
+                problem_name: "Problem 4",
+                solved: 3,
+                score: 100
+              }
+         ])
     }, [])
 
     const onModifyClick = (e, value) => {
@@ -92,20 +121,26 @@ function Problemset() {
             <Content>
                 <LeftSide width={session.role !== 1 && "100%"}>
                     <LeftSideComponent>
-                        <Table>
+                        <CustomTable>
                             <TableRow>
                                 <TableCellHead title="#" />
-                                <TableCellHead title="Problem ID" />
-                                <TableCellHead title="Problem name" />
+                                <TableCellHead title="Identifier" />
+                                <TableCellHead title="Your score" />
+                                <TableCellHead title="Title" />
+                                <TableCellHead title="Solved" />
                                 {session.role === 1 && <TableCellHead title="Action" />}
                             </TableRow>
                             {
                                 problems.map((value, key) => (
                                     <React.Fragment key={key}>
                                         <TableRow>
-                                            <TableCell padding="10px" title={key + 1} href={`/problemsets/problem/${value.problem_code}`} />
-                                            <TableCell padding="10px" title={value.problem_code} href={`/problemsets/problem/${value.problem_code}`} />
+                                            <TableCell padding="10px" title={key + 1} />
+                                            <TableCell padding="10px" title={value.problem_code} />
+                                            <TableCell padding="10px">
+                                            <ProgressBar animated now={value.score} label={`${value.score}%`} />
+                                            </TableCell>
                                             <TableCell padding="10px" title={value.problem_name} href={`/problemsets/problem/${value.problem_code}`} />
+                                            <TableCell padding="10px" title={value.solved}> </TableCell>
                                             {session.role === 1 &&
                                                 <TableCell padding="10px" >
                                                     <div style={{ display: "flex", columnGap: "10px", justifyContent: "center" }}>
@@ -118,7 +153,7 @@ function Problemset() {
                                     </React.Fragment>
                                 ))
                             }
-                        </Table>
+                        </CustomTable>
                     </LeftSideComponent>
                 </LeftSide>
 

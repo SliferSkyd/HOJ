@@ -161,7 +161,7 @@ table tr th {
 .popup-content {
     border-radius: var(--border-radius);
     padding: 5px;
-    width: 1000px;
+    width: flex;
     max-height: 90%;
     max-width: 90%;
     overflow: auto;

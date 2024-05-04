@@ -1,4 +1,5 @@
 .content {
+    font: 'Nanum Gothic', sans-serif;
     display: flex;
     width: var(--content-size);
     margin: var(--content-margin) auto;
@@ -7,7 +8,7 @@
 }
 
 .leftside {
-    width: 80%;
+    width: flex;
 }
 
 .leftside-component {

@@ -12,7 +12,7 @@ import QuickSubmit from "./submit/components/QuickSubmit"
 import MarkdownPreview from '@uiw/react-markdown-preview'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
-import Table from "../../components/utils/Table"
+import CustomTable from "../../components/utils/Table"
 import TableRow from "../../components/utils/TableRow"
 import TableCellHead from "../../components/utils/TableCellHead"
 import TableCell from "../../components/utils/TableCell"
@@ -46,7 +46,7 @@ function ProblemsetShow() {
                         {
                             problem.description.example.length !== 0 && <React.Fragment>
                                 <h4>Example</h4>
-                                <Table>
+                                <CustomTable>
                                     <TableRow>
                                         <TableCellHead title="Example Input" />
                                         <TableCellHead title="Example Output" />
@@ -61,7 +61,7 @@ function ProblemsetShow() {
                                             </React.Fragment>
                                         ))
                                     }
-                                </Table>
+                                </CustomTable>
                             </React.Fragment>
                         }
                         {
